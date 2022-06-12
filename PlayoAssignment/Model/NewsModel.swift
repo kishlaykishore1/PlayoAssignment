@@ -13,7 +13,7 @@ struct NewsModelElement: Codable {
     let author, title, newsModelDescription: String
     let url: String
     let urlToImage: String
-    let publishedAt: Date
+    let publishedAt: String
     let content: String
     
     enum CodingKeys: String, CodingKey {

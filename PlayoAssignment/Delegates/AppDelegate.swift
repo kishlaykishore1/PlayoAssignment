@@ -39,9 +39,9 @@ extension AppDelegate {
     
     func setupAppEntry() {
         let Main = UIStoryboard(name: "Main", bundle: nil)
-        let introVC = Main.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let introVC = Main.instantiateViewController(withIdentifier: "HeadLinesVC") as! HeadLinesVC
         let nav = UINavigationController(rootViewController: introVC)
-        nav.isNavigationBarHidden = true
+        nav.isNavigationBarHidden = false
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
